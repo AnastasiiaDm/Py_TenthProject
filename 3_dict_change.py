@@ -6,3 +6,11 @@ d = {
     'fruit': ['baca', 'bacca', 'popum'],
     'punishment': ['malum', 'multa']
 }
+
+
+def reverse(d):
+    print({v: [i for i in d.keys() if v in d[i]] for k, v in d.items() for v in v})
+
+
+reverse(d)
+

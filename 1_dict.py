@@ -8,4 +8,4 @@ def chr(x):
     return {i: i for i in range(32, 127)}[x]
 
 
-chr(x=40)
+print(chr(x=40))
