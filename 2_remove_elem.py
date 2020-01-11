@@ -4,15 +4,23 @@
     - НЕЛЬЗЯ: использовать метод `pop(k)` с параметром, оператор `del`.
     - МОЖНО ИСПОЛЬЗОВАТЬ: циклы, оператор `if`, функцию `pop()` без параметров.'''
 
-lst = [1, 2, 3, 4, 5]
-k = 2
+lst = [8, 2, 3, 4, 5]
+k = 3
 
 # lst.remove(k)
+# lst.pop()
+# print(lst)
+i = 0
+buff = -1
 
-# for k in lst:
-#     lst.pop()
+for t in lst:
+    if buff > -1:
+        lst[i-1] = lst[i]
+    if lst[i] == k:
+        buff = i
+    i += 1
 
-task = [x for x in lst].pop()
 
-print(task)
+lst.pop()
+
 
