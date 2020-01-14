@@ -7,20 +7,18 @@
 lst = [8, 2, 3, 4, 5]
 k = 3
 
-# lst.remove(k)
-# lst.pop()
-# print(lst)
-i = 0
-buff = -1
 
-for t in lst:
-    if buff > -1:
-        lst[i-1] = lst[i]
-    if lst[i] == k:
-        buff = i
-    i += 1
-
-
-lst.pop()
+def del_k(lst):
+    buff = -1
+    i = 0
+    for _ in lst:
+        if buff > -1:
+            lst[i - 1] = lst[i]
+        if lst[i] == k:
+            buff = i
+        i += 1
+    lst.pop()
+    # print(lst)
 
 
+del_k(lst)
