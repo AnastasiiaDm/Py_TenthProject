@@ -4,8 +4,8 @@
 Задача решается в одну строку.'''
 
 
-def chr(x):
-    return {i: i for i in range(32, 127)}[x]
+def dict_symbol():
+    return {i: chr(i) for i in range(32, 127)}
 
 
-print(chr(x=40))
+print(dict_symbol())
